@@ -16,6 +16,7 @@ const stripKeys = (whitelist, obj) => {
       ret[key] = obj[key];
     }
   })
+  return ret;
 }
 
 module.exports = (whitelist) => {
