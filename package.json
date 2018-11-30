@@ -1,6 +1,6 @@
 {
   "name": "idyll-plugin-url-state",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "This plugin enables the state of an Idyll article to be serialized/deserialized from the URL's query string. ",
   "main": "index.js",
   "scripts": {
