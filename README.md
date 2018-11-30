@@ -25,7 +25,11 @@ If you aren't using any other context plugins, your `context.js` file would look
 ```js
 const URLState = require('idyll-plugin-url-state');
 
-module.exports = URLState;
+// All keys
+module.exports = URLState();
+
+// Only certain keys
+module.exports = URLState(['key1', 'key2', ...]);
 ```
 
 If you are, you can use `idyll-context-compose` to compose multiple contexts together:
@@ -36,6 +40,7 @@ If you are, you can use `idyll-context-compose` to compose multiple contexts tog
 const compose = require('idyll-context-compose');
 const URLState = require('idyll-plugin-url-state');
 
-module.exports = compose(URLState, otherContext);
+module.exports = compose(URLState(), otherContext);
 ```
+
 
